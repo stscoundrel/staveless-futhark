@@ -9,4 +9,13 @@ describe('Runes to letters transformation tests', () => {
 
     expect(result).toBe(expected);
   });
+
+  test('Transforms Old Norse runic inscription', () => {
+    const content = '⸌ᛁ⸍:⡄ᛁ⸍⸝:╵⸍ᛁ⸜:וᛁ⸜⸝';
+    const expected = 'lit Rita stin þina';
+
+    const result = stavelessFuthark.runesToLetters(content);
+
+    expect(result).toBe(expected);
+  });
 });

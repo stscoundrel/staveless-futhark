@@ -17,4 +17,13 @@ describe('Letters to runes transformation tests', () => {
 
     expect(result).toBe(expected);
   });
+
+  test('Transforms Old Norse text to staveless runes', () => {
+    const content = 'kuþniutr þru sun lit rita stin þina ak bru kirþi aftiʀ bruþr sina asbiurn ak at kuþlaf';
+    const expected = 'ᛍ╮ו⸜ᛁ╮⸍⡄:ו⡄╮:╵╮⸜:⸌ᛁ⸍:⡄ᛁ⸍⸝:╵⸍ᛁ⸜:וᛁ⸜⸝:⸝ᛍ:ˏ⡄╮:ᛍᛁ⡄וᛁ:⸝ᛙ⸍ᛁʀ:ˏ⡄╮ו⡄:╵ᛁ⸜⸝:⸝╵ˏᛁ╮⡄⸜:⸝ᛍ:⸝⸍:ᛍ╮ו⸌⸝ᛙ';
+
+    const result = stavelessFuthark.lettersToRunes(content);
+
+    expect(result).toBe(expected);
+  });
 });
