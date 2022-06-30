@@ -1,5 +1,11 @@
-export const example = (): string => 'test string';
+import { getLettersToRunesMapping } from './mappings/letters-to-runes';
+import { transform } from './transform';
+
+export const lettersToRunes = (
+  content: string,
+): string => transform(content, getLettersToRunesMapping());
 
 export default {
-  example,
+  lettersToRunes,
+  getLetterMapping: getLettersToRunesMapping,
 };
