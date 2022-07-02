@@ -22,7 +22,8 @@ export const getLettersToRunesMapping = (): Map<string, string> => {
   letterMapping.set('ó', 'ˎ');
   letterMapping.set('p', 'ˏ');
   letterMapping.set('q', 'ᛍ');
-  letterMapping.set('r', '⡄');
+  letterMapping.set('r', '◟');
+  letterMapping.set('R', '⡄');
   letterMapping.set('s', '╵');
   letterMapping.set('t', '⸍');
   letterMapping.set('þ', 'ו');
