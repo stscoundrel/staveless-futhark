@@ -10,8 +10,8 @@ describe('Letters to runes transformation tests', () => {
   });
 
   test('Transforms letters to runes', () => {
-    const content = 'aábcdðeéfghiíjklmnoópqrstþuúvwxyýzåäæöøǫþ ';
-    const expected = '⸝⸝ˏ╵⸍וᛁᛁᛙᛍᚽᛁᛁᛁᛍ⸌⠃⸜ˎˎˏᛍ⡄╵⸍ו╮╮╮╮╵╮╮╵ˎ⸝⸝ˎˎˎו:';
+    const content = 'aábcdðeéfghiíjklmnoópqrRstþuúvwxyýzåäæöøǫþ ';
+    const expected = '⸝⸝ˏ╵⸍וᛁᛁᛙᛍᚽᛁᛁᛁᛍ⸌⠃⸜ˎˎˏᛍ◟⡄╵⸍ו╮╮╮╮╵╮╮╵ˎ⸝⸝ˎˎˎו:';
 
     const result = stavelessFuthark.lettersToRunes(content);
 
@@ -20,7 +20,7 @@ describe('Letters to runes transformation tests', () => {
 
   test('Transforms Old Norse text to staveless runes', () => {
     const content = 'kuþniutr þru sun lit rita stin þina ak bru kirþi aftiʀ bruþr sina asbiurn ak at kuþlaf';
-    const expected = 'ᛍ╮ו⸜ᛁ╮⸍⡄:ו⡄╮:╵╮⸜:⸌ᛁ⸍:⡄ᛁ⸍⸝:╵⸍ᛁ⸜:וᛁ⸜⸝:⸝ᛍ:ˏ⡄╮:ᛍᛁ⡄וᛁ:⸝ᛙ⸍ᛁʀ:ˏ⡄╮ו⡄:╵ᛁ⸜⸝:⸝╵ˏᛁ╮⡄⸜:⸝ᛍ:⸝⸍:ᛍ╮ו⸌⸝ᛙ';
+    const expected = 'ᛍ╮ו⸜ᛁ╮⸍◟:ו◟╮:╵╮⸜:⸌ᛁ⸍:◟ᛁ⸍⸝:╵⸍ᛁ⸜:וᛁ⸜⸝:⸝ᛍ:ˏ◟╮:ᛍᛁ◟וᛁ:⸝ᛙ⸍ᛁʀ:ˏ◟╮ו◟:╵ᛁ⸜⸝:⸝╵ˏᛁ╮◟⸜:⸝ᛍ:⸝⸍:ᛍ╮ו⸌⸝ᛙ';
 
     const result = stavelessFuthark.lettersToRunes(content);
 
