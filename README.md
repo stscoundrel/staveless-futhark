@@ -1,4 +1,4 @@
-# Stavekess Futhark
+# Staveless Futhark
 
 Transform latin letters to Staveless Futhark runes & vice versa
 
