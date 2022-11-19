@@ -10,8 +10,8 @@ describe('Letters to runes transformation tests', () => {
   });
 
   test('Transforms letters to runes', () => {
-    const content = 'aábcdðeéfghiíjklmnoópqrRstþuúvwxyýzåäæöøǫþ ';
-    const expected = '⸝⸝ˏ╵⸍וᛁᛁᛙᛍᚽᛁᛁᛁᛍ⸌⠃⸜ˎˎˏᛍ◟⡄╵⸍ו╮╮╮╮╵╮╮╵ˎ⸝⸝ˎˎˎו:';
+    const content = 'aábcdðeéfghiíjklmnoópqrRstþuúvwxyýzåäæœöøǫþ ';
+    const expected = '⸝⸝ˏ╵⸍וᛁᛁᛙᛍᚽᛁᛁᛁᛍ⸌⠃⸜ˎˎˏᛍ◟⡄╵⸍ו╮╮╮╮╵╮╮╵ˎ⸝⸝ˎˎˎˎו:';
 
     const result = stavelessFuthark.lettersToRunes(content);
 
